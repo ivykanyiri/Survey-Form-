@@ -1,0 +1,65 @@
+<head>
+  <meta charset= "UTF_8">
+  <title>Survey Form</title>
+</head>
+<main class="container">
+  <h1 id="title">"Summer Shred 2021" Survey Form</h1>
+  <p id= "description">Thank you for taking your time to help us improve this training program.</p>
+  
+  <form id="survey-form" action="">
+    <label for="name" id="name-label">Name</label><br>
+    <input type="text" id="name" name="name" placeholder="Enter your full name" required><br>
+    <label for="email" id="email-label">Email</label><br>
+    <input type="email" name="email" id="email" placeholder="Enter your email address" required><br>
+    <label for="age" id= "number-label">Age (optional)</label> <br>
+    <input type="number" id="number" name="age" min = 10 max=80 placeholder="Age"> <br>
+    <label for="level">Which option best describes your current level?</label><br>
+    <select name="level" id="dropdown" required>
+      <option hidden>Select your current level..</option>
+      <option value="beginner">Beginner</option>
+      <option value="intermediate">Intermediate</option>
+      <option value="advanced">Advanced</option>     
+    </select> <br>
+    <p>Would you recommend Summer Shred to anyone?</p>
+    <label for="definitely">
+      <input id="definitely" type="radio" name="recommendation" required>Definitely
+    </label><br>
+    <label for="maybe">
+      <input id="maybe" type="radio" name="recommendation">Maybe
+    </label><br>
+    <label for="never">
+      <input id="never" type="radio" name="recommendation">Never
+    </label>
+    <br>
+    <p>Which was your favorite workout for the Summmer Shred 2021?</p>
+    <select name="level" id="dropdown" required><br>
+      <option value="" hidden>Select your favorite..</option>
+      <option value="upperbody">Upper-body HIIT Workout</option>
+      <option value="lowerbody">Lower Body HIIT Workout</option>
+      <option value="fullbody">Full Body HIIT Workout</option>
+      <option value="cardio">Cardio HIIT Workout</option> 
+    </select> <br>
+    
+    <p>What would you like to see improved? (Check all the boxes that apply to you) </p>
+    <label for="sound">
+      <input id="sound" value="sound" type="checkbox" name="feeback">Sound Quality/Audio
+    </label><br>
+    <label for="videos">
+      <input id="videos" value="videos" type="checkbox" name="feedback">Videos
+    </label> <br>
+    <label for="intensity">
+      <input id="intensity" value="intensity" type="checkbox" name="feedback">Intensity
+    </label> <br>
+    <label for="instructions">
+      <input id="instructions" value="instructions" type="checkbox" name="feedback">Trainer's instructions
+      <br>
+      <p>Any comments and suggestions?</p>
+        
+        <textarea id ="comments" name="comment" placeholder= "Please enter your comments and suggestions here..."></textarea>
+      </l>
+      <br>
+      <button id="submit" type="submit">Submit</button>
+    
+  </form>
+  
+</main>
